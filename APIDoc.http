@@ -4,17 +4,45 @@ POST http://127.0.0.1:8000/users/
 Content-Type: application/json
 
 {
-  "first_name": "Liam",
-  "last_name": "Oconnor",
-  "user_name": "liam_dev_99",
-  "email": "liam.oc@tech-solutions.com",
-  "age": 24,
-  "bio": "cool",
-  "password": "StrongPass!2026"
-}
+    "first_name": "Sarah",
+    "last_name": "Chen",
+    "user_name": "schen_dev",
+    "email": "sarah.chen@tech.io",
+    "age": 29,
+    "bio": "Building the future of the web.",
+    "password": "Dev_@_Sarah88"
+  }
 
 
 # api call for list users
 ###
 GET http://127.0.0.1:8000/users/
 Accept: application/json
+
+
+# api call for reetriev user
+###
+GET http://127.0.0.1:8000/users/3/
+Accept: application/json
+
+
+
+# api call for update user
+###
+PUT http://127.0.0.1:8000/users/3/
+Content-Type: application/json
+
+{
+  "first_name": "Elena",
+  "last_name": "Rodriguez",
+  "user_name": "elen2a_rod",
+  "email": "erodri2guez@company.org",
+  "age": 21,
+  "bio": "Graduate student studying data science.",
+  "password": "Data!Science2025"
+}
+
+
+# api call for delete user
+###
+DELETE http://127.0.0.1:8000/users/3/
