@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+# Create your views here.
+from django.shortcuts import render
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -36,4 +39,3 @@ class UsersCreateListView(APIView):
         serializer_instance = UsersSerializers(qs, many=True)
 
         return Response(data=serializer_instance.data)
-
